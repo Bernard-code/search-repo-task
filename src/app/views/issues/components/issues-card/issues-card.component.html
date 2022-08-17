@@ -1,0 +1,11 @@
+<div class="issues-card">
+  <app-issues-card-header></app-issues-card-header>
+  <div *ngIf="issues$ | async as issues">
+    <app-issues-card-body
+      *ngFor="let item of issues.items"
+      [item]="item"
+    >
+    </app-issues-card-body>
+  </div>
+<!--  <app-issues-card-not-found></app-issues-card-not-found>-->
+</div>

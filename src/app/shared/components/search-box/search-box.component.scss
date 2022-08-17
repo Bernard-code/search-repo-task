@@ -1,0 +1,14 @@
+.search-input {
+  transition: width .5s;
+  width: 300px;
+  border-radius: 8px;
+  background: #FAFBFC;
+  border: none;
+  height: 16px;
+
+  &:focus {
+    width: 450px;
+    background: #404448;
+    color: #fff;
+  }
+}
